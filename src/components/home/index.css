@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+}
+
+.bg-container {
+    background-image: url("https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fg-container {
+    display: flex;
+    align-items: center;
+}
+
+.bg-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .1); /* Adjust the opacity here */
+    z-index: -1;
+  }
+
+  .content {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .content ol {
+    margin-top: 20px;
+  }
+
+  .content ol li {
+    margin-bottom: 15px;
+  }
+
+  .menu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu button {
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(137, 137, 236);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
